@@ -59,6 +59,9 @@ command:sudo vi /etc/ansible/hosts
   become: true
   tasks:
 
+  - name: Upgrade
+    apt: update_cache=yes upgrade=full
+  
   - name: Install git
     apt: pkg=git 
 
