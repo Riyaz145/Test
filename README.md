@@ -45,8 +45,8 @@ command:sudo vi /etc/ansible/hosts
         Varify hosts file (ansible all --list-hosts)
         Now run ansible command to ping(ansible all -m command -a date)
         if found any error please check publickey authentication is yes
-        permitrootlogin in sudo vi etc/ssh/sshd_config
-        restart servie:service sshd restart
+        permitrootlogin in $ sudo vi etc/ssh/sshd_config
+        restart servie:$sudo service sshd restart
        
  ===>Installing packages by using a configuration management tool Ansible:
  create a yml file
