@@ -37,7 +37,7 @@ By default it will download its dependecies phyton.
 step2: Run ssh-keygen command and simply enter 3 times
 command:cd .ssh
         copy  id_rsa.pub key and paste in authorized keys
-        Repeat same step --copy  id_rsa.pub key and paste in authorized keys for instance 2
+        Repeat same step --copy  id_rsa.pub key from instance 1 and paste in authorized keys for instance 2
 
 step3:Hosts file of ansible
 command:sudo vi /etc/ansible/hosts
