@@ -79,8 +79,8 @@ command:sudo vi /etc/ansible/hosts
       
   - name: nodejs 8.12
     get_url:
-      url=https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz
-      dest=/opt
+      url: https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz
+      dest: /opt
   - name: Extract node tar.xz
     unarchive:
       src: /opt/node-v8.12.0-linux-x64.tar.xz
