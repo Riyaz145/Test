@@ -112,7 +112,9 @@ command:sudo vi /etc/ansible/hosts
         dest: /usr/local/bin/docker-compose
         mode: 4777
 
-
+-------------------------------
+to execute code 
+command:ansible-playbook test.yml
 
 
  
