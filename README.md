@@ -23,27 +23,7 @@ Step 1: *Choose an Amazon Machine Image (AMI)
          create a public key pair and convert that public key into private key with help of putty gen.             
          Login in putty with private key
      
- Alternative option:
- ---
-- hosts: all
-  become: true
-  tasks:
-  - name: E2c instance
-    ec2:
-       key_name:ansible_awskey
-       region: us-west-2
-       instance_type: t2-micro
-       image: ami-ffc3e790
-       wait: yes
-       wait_timeout: 500
-       count: 1
-       instance_tags:
-                 Name: MSR-TEST-INSTANCE-2
-                 Owner: syed
-       monitoring: no
-       vpc_subnet_id: subnet-2bc77877
-       assign_public_ip: yes
-       group: launch-wizard-2
+
 
 
 Login:ubuntu
